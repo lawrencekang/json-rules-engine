@@ -32,23 +32,23 @@ let conditions = {
       operator: 'lessThanInclusive',
       value: 25
     },
-    any: [
-      {
-        fact: 'state',
-        params: {
-          country: 'us'
-        },
-        operator: 'equal',
-        value: 'colorado'
-      }, {
-        fact: 'state',
-        params: {
-          country: 'us'
-        },
-        operator: 'equal',
-        value: 'utah'
-      }
-    ]
+  ], 
+  any: [
+    {
+      fact: 'state',
+      params: {
+        country: 'us'
+      },
+      operator: 'equal',
+      value: 'colorado'
+    }, {
+      fact: 'state',
+      params: {
+        country: 'us'
+      },
+      operator: 'equal',
+      value: 'utah'
+    }
   ]
 }
 let rule = new Rule({ conditions, event})
